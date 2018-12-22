@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.com/ig248/livehistoryplot.svg?branch=master)](https://travis-ci.com/ig248/livehistoryplot)
-[![Coverage Status](https://codecov.io/gh/ig248/livehistoryplot/branch/master/graph/badge.svg)](https://codecov.io/gh/ig248/livehistoryplot)
+[![Build Status](https://travis-ci.com/ig248/kerashistoryplot.svg?branch=master)](https://travis-ci.com/ig248/kerashistoryplot)
+[![Coverage Status](https://codecov.io/gh/ig248/kerashistoryplot/branch/master/graph/badge.svg)](https://codecov.io/gh/ig248/kerashistoryplot)
 
-# Live history plot for Keras model training
+# History plot for Keras model training
 
-![history plot with batches](livehistoryplot.png)
+![history plot with batches](kerashistoryplot.png)
 
 Plots training losses and metrics in Jupyter while training your `keras` model.
 

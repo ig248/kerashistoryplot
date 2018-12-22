@@ -3,7 +3,10 @@
 Release History
 ---------------
 
-0.0.1 (unreleased)
+0.0.2 (unreleased)
 ++++++++++++++++++
 
-- Nothing to see here
+0.0.1 (2018-12-22)
+++++++++++++++++++
+
+- Adds useful BatchHistory and PlotHistory callbacks

@@ -7,7 +7,7 @@ verify_ssl = true
 python_version = "3.6"
 
 [packages]
-livehistoryplot = {editable = true, path = "."}
+kerashistoryplot = {editable = true, path = "."}
 
 [dev-packages]
 mccabe = '*'
