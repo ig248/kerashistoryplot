@@ -5,7 +5,16 @@
 
 ![history plot with batches](livehistoryplot.png)
 
-## Usage
+Plots training losses and metrics in Jupyter while training your `keras` model.
+
+This project started as an attempt to extend [`livelossplot`] (https://github.com/stared/livelossplot), but I realized that a rewrite was easier. Key improvements are:
+
+- keeps full history, including losses for each batch in each epoch
+- plots scatter of batch losses
+- plots arbitrary log entries, such a `lr` (learning rate)
+- simplifies codebase extendibility
+
+## Basic Usage
 Install package from source:
 
 ```
@@ -30,6 +39,9 @@ model.fit(
     ]
 )
 ```
+
+## More Examples
+See `notebooks/`
 
 ## Tests
 Run
