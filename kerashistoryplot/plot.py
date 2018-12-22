@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-
 from IPython.display import clear_output
 
 from .data import get_metric_vs_epoch

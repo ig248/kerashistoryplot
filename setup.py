@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*
 import os.path
+
 from setuptools import find_packages, setup
 
 VERSION = '0.0.3'

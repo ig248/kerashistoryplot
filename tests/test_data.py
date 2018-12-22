@@ -1,4 +1,5 @@
-from kerashistoryplot.data import get_batch_metric_vs_epoch, get_metric_vs_epoch
+from kerashistoryplot.data import (get_batch_metric_vs_epoch,
+                                   get_metric_vs_epoch)
 
 HISTORY = {
     'batches': [
