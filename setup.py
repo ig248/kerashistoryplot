@@ -3,7 +3,7 @@
 import os.path
 from setuptools import find_packages, setup
 
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 
 # read the contents of your README file
 this_directory = os.path.abspath(os.path.dirname(__file__))
@@ -13,13 +13,13 @@ with open(os.path.join(this_directory, 'README.md')) as f:
 setup(
     name='kerashistoryplot',
     version=VERSION,
+    description='What the module does',
+    url='https://github.com/ig248/kerashistoryplot',
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=find_packages(exclude=('tests', )),
     entry_points={'console_scripts': []},
     include_package_data=True,
-    zip_safe=False,
-    description='Live plot of Keras model history',
     author='Igor Gotlibovych',
     author_email='igor.gotlibovych@gmail.com',
     license='MIT',
