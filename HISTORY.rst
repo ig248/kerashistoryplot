@@ -3,6 +3,12 @@
 Release History
 ---------------
 
+0.0.5 (2018-12-22)
+++++++++++++++++++
+
+- Fix PyPi description
+- Use raw image link in README
+
 0.0.4 (2018-12-22)
 ++++++++++++++++++
 

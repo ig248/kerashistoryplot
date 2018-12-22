@@ -3,7 +3,7 @@
 
 # History plot for Keras model training
 
-![history plot with batches](https://github.com/ig248/kerashistoryplot/blob/master/kerashistoryplot.png)
+![history plot with batches](https://raw.githubusercontent.com/ig248/kerashistoryplot/master/kerashistoryplot.png)
 
 Plots training losses and metrics in Jupyter while training your `keras` model.
 

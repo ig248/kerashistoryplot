@@ -4,7 +4,7 @@ import os.path
 
 from setuptools import find_packages, setup
 
-VERSION = '0.0.4'
+VERSION = '0.0.5'
 
 # read the contents of your README file
 this_directory = os.path.abspath(os.path.dirname(__file__))
@@ -14,7 +14,7 @@ with open(os.path.join(this_directory, 'README.md')) as f:
 setup(
     name='kerashistoryplot',
     version=VERSION,
-    description='What the module does',
+    description='Plot Keras model losses and metrics live in Jupyter',
     url='https://github.com/ig248/kerashistoryplot',
     long_description=long_description,
     long_description_content_type='text/markdown',
