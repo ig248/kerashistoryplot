@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*
 from setuptools import find_packages, setup
 
-VERSION = '0.0.0.DEV0'
+VERSION = '0.0.1'
 
 setup(
-    name='livehistoryplot',
+    name='kerashistoryplot',
     version=VERSION,
     packages=find_packages(exclude=('tests', )),
     entry_points={'console_scripts': []},
