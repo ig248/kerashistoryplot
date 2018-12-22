@@ -3,6 +3,11 @@
 Release History
 ---------------
 
+0.0.4 (2018-12-22)
+++++++++++++++++++
+
+- Update README to display image on PyPi
+
 0.0.3 (2018-12-22)
 ++++++++++++++++++
 
