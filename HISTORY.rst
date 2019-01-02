@@ -3,6 +3,10 @@
 Release History
 ---------------
 
+0.0.6 (2018-01-02)
+++++++++++++++++++
+- Fix plotting for the case of a single metric.
+
 0.0.5 (2018-12-22)
 ++++++++++++++++++
 

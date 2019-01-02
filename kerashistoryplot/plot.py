@@ -45,6 +45,8 @@ def plot_history(
     )
     if n_cols > 1 and n_rows > 1:
         axes = [a for row in axes for a in row]
+    elif n_cols == 1 and n_rows == 1:
+        axes = [axes]
     for metric, axis in zip(plot_metrics, axes):
         data = get_metric_vs_epoch(history, metric, batches=batches)
         make_subplot(data, metric, axis, max_epoch=max_epoch)

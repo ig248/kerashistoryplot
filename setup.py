@@ -4,7 +4,7 @@ import os.path
 
 from setuptools import find_packages, setup
 
-VERSION = '0.0.5'
+VERSION = '0.0.6'
 
 # read the contents of your README file
 this_directory = os.path.abspath(os.path.dirname(__file__))
