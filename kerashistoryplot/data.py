@@ -11,10 +11,15 @@ def get_metric_vs_epoch(history, metric, batches=True):
     val_metric = f'val_{metric}'
     for key in [metric, val_metric]:
         if key in history:
+            values = history[key]
+            if 'epoch' in history:
+                epochs = history['epoch']
+            else:
+                epochs = range(len(values))
             data.append(
                 {
-                    'x': history['epoch'],
-                    'y': history[key],
+                    'x': epochs,
+                    'y': values,
                     'label': key
                 }
             )
