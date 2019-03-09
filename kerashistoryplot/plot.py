@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from IPython.display import clear_output
 
-from .data import get_metric_vs_epoch
+from .data import get_metrics, get_metric_vs_epoch
 
 
 def _ceil_div(dividend, divisor):
@@ -33,10 +33,7 @@ def plot_history(
 ):
     if clear:
         clear_output(wait=True)
-    plot_metrics = [
-        k for k in history.keys()
-        if k not in ['epoch', 'batches'] and not k.startswith('val_')
-    ]
+    plot_metrics = get_metrics()
     n_subplots = len(plot_metrics)
     n_cols = min(n_cols, n_subplots)
     n_rows = _ceil_div(n_subplots, n_cols)

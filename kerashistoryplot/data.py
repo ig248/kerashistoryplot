@@ -1,3 +1,11 @@
+def get_metrics(history):
+    plot_metrics = [
+        k for k in history.keys()
+        if k not in ['epoch', 'batches'] and not k.startswith('val_')
+    ]
+    return plot_metrics
+
+
 def get_metric_vs_epoch(history, metric, batches=True):
     data = []
     val_metric = f'val_{metric}'
@@ -11,13 +19,13 @@ def get_metric_vs_epoch(history, metric, batches=True):
                 }
             )
     if batches:
-        batch_data = get_batch_metric_vs_epoch(history, metric)
+        batch_data = _get_batch_metric_vs_epoch(history, metric)
         if batch_data:
             data.append(batch_data)
     return data
 
 
-def get_batch_metric_vs_epoch(history, metric):
+def _get_batch_metric_vs_epoch(history, metric):
     if not history.get('batches') or metric not in history['batches'][0]:
         return
     epoch_value = [

@@ -1,4 +1,5 @@
-from kerashistoryplot.data import (get_batch_metric_vs_epoch,
+from kerashistoryplot.data import (get_metrics,
+                                   _get_batch_metric_vs_epoch,
                                    get_metric_vs_epoch)
 
 HISTORY = {
@@ -25,6 +26,11 @@ HISTORY = {
 }
 
 
+def test_get_metrics():
+    plot_metrics = get_metrics(HISTORY)
+    assert set(plot_metrics) == set(['loss', 'mean_absolute_error', 'lr'])
+
+
 class TestGetMetricVsEpoch:
     def test_simple_case(self):
         plot_data = get_metric_vs_epoch(HISTORY, metric='lr')
@@ -33,7 +39,7 @@ class TestGetMetricVsEpoch:
         assert plot_data == expected_data
 
     def test_get_batch_metric_vs_epoch(self):
-        batch_data = get_batch_metric_vs_epoch(HISTORY, metric='loss')
+        batch_data = _get_batch_metric_vs_epoch(HISTORY, metric='loss')
         expected_data = {
             'x': [0, 0, 1, 1],
             'y': [0.4, 0.3, 0.2, 0.1],
