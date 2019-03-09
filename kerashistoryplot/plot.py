@@ -33,7 +33,7 @@ def plot_history(
 ):
     if clear:
         clear_output(wait=True)
-    plot_metrics = get_metrics()
+    plot_metrics = get_metrics(history)
     n_subplots = len(plot_metrics)
     n_cols = min(n_cols, n_subplots)
     n_rows = _ceil_div(n_subplots, n_cols)
