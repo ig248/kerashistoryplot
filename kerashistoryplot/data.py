@@ -15,7 +15,7 @@ def get_metric_vs_epoch(history, metric, batches=True):
             if 'epoch' in history:
                 epochs = history['epoch']
             else:
-                epochs = range(len(values))
+                epochs = list(range(len(values)))
             data.append(
                 {
                     'x': epochs,
